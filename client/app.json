@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/addCgi/addCgi",
+    "pages/addTest/addTest"
+  ],
+  "window": {
+    "backgroundColor": "#ff0000",
+    "backgroundTextStyle": "black",
+    "navigationBarBackgroundColor": "#000006",
+    "navigationBarTitleText": "背经这件小事",
+    "navigationBarTextStyle": "white"
+  }
+}

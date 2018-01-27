@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="container">
+    <!-- 用户登录测试 -->
+    <view class="userinfo" bindtap="login">
+        <image
+            class="userinfo-avatar"
+            src="{{logged ? userInfo.avatarUrl : './user-unlogin.png'}}"
+            background-size="cover"
+        ></image>
+        <view>
+            <text class="userinfo-nickname">{{logged ? userInfo.nickName : '登陆'}}</text>
+            <text class="userinfo-nickname" wx:if="{{logged}}">{{userInfo.lastLoginTime}}</text>
+        </view>
+    </view>
+
+
+        <!-- 制作简答题 -->
+    <view class="uploader">
+        <navigator url="../addTest/addTest" open-type="navigate" class="uploader-text">
+            <text>Week One Test “罗马书1·祝福”</text>
+        </navigator>
+    </view>
+    
+    <image class="image_frame" src="http://img1.3lian.com/2015/w7/85/d/101.jpg" mode="aspectFill">  
+</image>  
+
+</view>

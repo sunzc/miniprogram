@@ -1,0 +1,41 @@
+<scroll-view scroll-y style="height: {{clientHeight?clientHeight+'px':'auto'}};" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+
+    <view class="card" wx:for="{{items}}">
+        <view data-publish-time="{{item.time}}" bindtap="onItemClick">
+        {{item.text}}
+        </view>
+    </view>
+    
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="bibletext">
+    <text>{{bible_title}}</text>
+  </view>
+  <view class="bibletext">
+    <text>{{sec1}}</text>
+  </view>
+  <view class="bibletext">
+    <text>{{sec2}}</text>
+  </view>
+  <view class="bibletext">
+    <input name="input" placeholder="请填写第三小节..." />
+  </view>
+  <view class="bibletext">
+    <text>{{sec4}}</text>
+  </view>
+  <view class="bibletext">
+    <text>{{sec5}}</text>
+  </view>
+  <view class="bibletext">
+    <input name="input" placeholder="请填写第六小节..." />
+  </view>
+  <view class="bibletext">
+    <text>{{sec7}}</text>
+  </view>
+  <view class="btn-area">
+    <button formType="submit">Submit</button>
+    <button formType="reset">Reset</button>
+  </view>
+ </form>
+
+</scroll-view>
+ 
